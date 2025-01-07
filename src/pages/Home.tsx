@@ -29,7 +29,7 @@ export default function Home() {
                <span>(+234) 913 375 8980</span>
                <span className="hidden sm:inline">·</span>
             </p>
-            <p className="text-primary">opueneoyeinbomo@gmail.com</p>
+            <p className="text-primary">oyeinbomoopuene@gmail.com</p>
          </div>
 
          <p className="text-lg sm:text-xl mb-8">
