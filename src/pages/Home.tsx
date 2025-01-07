@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedinIn, FaTwitter, FaFacebookF } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const socialLinks = [
-   { icon: FaFacebookF, href: "#" },
+   // { icon: FaFacebookF, href: "#" },
    { icon: FaTwitter, href: "https://x.com/oyeinbomo" },
    { icon: FaLinkedinIn, href: "https://linkedin.com/in/oyeinbomo" },
    { icon: FaGithub, href: "https://github.com/Oyeins-GUI" },
