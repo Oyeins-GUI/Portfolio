@@ -32,9 +32,14 @@ export default function Contact() {
 
       if (form.current) {
          emailjs
-            .sendForm("service_qp31l6j", "contact_form", form.current, {
-               publicKey: "ICxOh_tcD2eZlomcm",
-            })
+            .sendForm(
+               import.meta.env.VITE_SERVICE_ID,
+               import.meta.env.VITE_TEMPLATE_ID,
+               form.current,
+               {
+                  publicKey: import.meta.env.VITE_PUBLIC_KEY,
+               }
+            )
             .then(() => {
                setSubmitMessage(
                   "Thank you for your message. We'll get back to you soon!"
