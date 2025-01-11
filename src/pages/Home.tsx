@@ -6,8 +6,8 @@ import {
    FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-router";
-import AgeCalculus from "../assets/Age Calculus.png";
-import Countries from "../assets/Travel-With-Oyeins-Countries.png";
+import AgeCalculus from "../assets/Age Calculus.webp";
+import Countries from "../assets/Travel-With-Oyeins-Countries.webp";
 import { FaHtml5, FaReact } from "react-icons/fa6";
 import { IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 
@@ -86,6 +86,10 @@ export default function Home() {
                      >
                         <img
                            src={project.image}
+                           srcSet={project.image}
+                           loading="lazy"
+                           decoding="async"
+                           fetchPriority="high"
                            alt={`${project.title} screenshot`}
                            className="w-full h-48 object-cover"
                         />

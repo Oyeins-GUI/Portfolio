@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import Headphone from "../assets/Headphone.png";
-import AgeCalculus from "../assets/Age Calculus.png";
-import Countries from "../assets/Travel-With-Oyeins-Countries.png";
-import SpaceTourism from "../assets/Space tourism.png";
-import NewsPpage from "../assets/News Homepage.png";
+import Headphone from "../assets/Headphone.webp";
+import AgeCalculus from "../assets/Age Calculus.webp";
+import Countries from "../assets/Travel-With-Oyeins-Countries.webp";
+import SpaceTourism from "../assets/Space tourism.webp";
+import NewsPpage from "../assets/News Homepage.webp";
 import { Link } from "react-router";
 
 const projects = [
@@ -80,6 +80,10 @@ export default function Projects() {
                   >
                      <img
                         src={project.image}
+                        srcSet={project.image}
+                        loading="lazy"
+                        decoding="async"
+                        fetchPriority="high"
                         alt={`${project.title} screenshot`}
                         className="w-full h-48 object-cover"
                      />

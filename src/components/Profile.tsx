@@ -1,4 +1,4 @@
-import pfp2 from "../assets/pfp2.jpg";
+import pfp2 from "../assets/pfp2.webp";
 
 export default function Profile({ type }: { type: "sm" | "lg" }) {
    if (type === "sm")
@@ -8,6 +8,10 @@ export default function Profile({ type }: { type: "sm" | "lg" }) {
                src={pfp2}
                alt="profile"
                className="border-2 border-white/20 w-full block object-cover"
+               srcSet={pfp2}
+               loading="lazy"
+               decoding="async"
+               fetchPriority="high"
             />
          </div>
       );
@@ -18,6 +22,10 @@ export default function Profile({ type }: { type: "sm" | "lg" }) {
             src={pfp2}
             alt="profile"
             className="border-4 border-white/20 w-full block object-cover"
+            srcSet={pfp2}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="high"
          />
       </div>
    );
