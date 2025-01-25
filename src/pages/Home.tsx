@@ -31,6 +31,8 @@ export default function Home() {
 
          <div className="text-base sm:text-lg text-gray-600 mb-8">
             <p className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+               {/* <span>IGBOGENE-EPIE</span>
+               <span className="hidden sm:inline">·</span> */}
                <span>YENAGOA, BAYELSA STATE</span>
                <span className="hidden sm:inline">·</span>
                <span>(+234) 913 375 8980</span>
